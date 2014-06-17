@@ -1,11 +1,11 @@
 'use strict';
 
-/* Controllers */
+var eventAppControllers = angular.module('EventAppControllers', []);
 
-angular.module('myApp.controllers', [])
-  .controller('MyCtrl1', ['$scope', function($scope) {
+eventAppControllers.controller('HomeCtrl', ['$scope', function($scope) {
 
-  }])
-  .controller('MyCtrl2', ['$scope', function($scope) {
+}]);
 
-  }]);
+eventAppControllers.controller('CreateEventCtrl', ['$scope', function($scope) {
+
+}]);
