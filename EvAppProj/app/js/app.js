@@ -1,5 +1,3 @@
-'use strict';
-
 var eventApp = angular.module('EventApp', [
     'ngRoute',
     'EventAppControllers',
@@ -8,8 +6,14 @@ var eventApp = angular.module('EventApp', [
     'EventAppDirectives'
 ]);
 
-eventApp.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/home', {templateUrl: 'partials/home.html', controller: 'HomeCtrl'});
-  $routeProvider.when('/createEvent', {templateUrl: 'partials/createEvent.html', controller: 'CreateEventCtrl'});
+eventApp.config(function($routeProvider) {
+  $routeProvider.when('/home', {
+      templateUrl: 'partials/home.html',
+      controller: 'HomeCtrl'
+  });
+  $routeProvider.when('/createEvent', {
+      templateUrl: 'partials/createEvent.html',
+      controller: 'CreateEventCtrl'
+  });
   $routeProvider.otherwise({redirectTo: '/home'});
-}]);
+});
