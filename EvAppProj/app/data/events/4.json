@@ -1,0 +1,12 @@
+{
+    "id": 4,
+    "name": "Fall Code Camp",
+    "date": "10/01/2014",
+    "time": "10am",
+    "location": {
+        "address": "Terazije",
+        "city": "Belgrade",
+        "province": "SR"},
+    "imageUrl":"http://s3.favim.com/orig/39/funny-llama-lol-nonsense-pink-Favim.com-325386.jpg",
+    "sessions": []
+}

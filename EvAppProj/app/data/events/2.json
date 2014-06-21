@@ -1,0 +1,49 @@
+{
+    "id": 2,
+    "name": "Code Camp",
+    "date": "03/15/2014",
+    "time": "9:00am - 5:00pm",
+    "location": {
+        "address": "123 Wall St",
+        "city": "New York",
+        "province": "NY"
+    },
+    "imageUrl": "http://blog.laptopmag.com/wpress/wp-content/uploads/2012/08/Code-Camp_sf.jpg",
+    "sessions": [
+        {
+            "name": "How To Program",
+            "creatorName": "Jim Cooper",
+            "duration": 1,
+            "level": "Advanced",
+            "abstract": "This session will teach you to program."
+        },
+        {
+            "name": "How To Dance",
+            "creatorName": "Jim Cooper",
+            "duration": 4,
+            "level": "Introductory",
+            "abstract": "This session will teach you to dance."
+        },
+        {
+            "name": "How To Sing",
+            "creatorName": "Bob",
+            "duration": 1,
+            "level": "Advanced",
+            "abstract": "This session will teach you to sing  Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum  Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum  Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum "
+        },
+        {
+            "name": "How To Be Awesome",
+            "creatorName": "Bob",
+            "duration": 2,
+            "level": "Introductory",
+            "abstract": "This course will make me rich"
+        },
+        {
+            "name": "How to build Angular Applications",
+            "creatorName": "Bob",
+            "duration": 2,
+            "level": "Intermediate",
+            "abstract": "This session is all about angular applications"
+        }
+    ]
+}

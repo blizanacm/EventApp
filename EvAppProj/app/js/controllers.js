@@ -7,3 +7,5 @@ eventAppControllers.controller('HomeCtrl', function($scope) {
 eventAppControllers.controller('CreateEventCtrl', function($scope) {
 
 });
+
+//$scope.events = EventService.getAllEvents();
