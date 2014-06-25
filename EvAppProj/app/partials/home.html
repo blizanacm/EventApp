@@ -1,7 +1,5 @@
 <div>
     <ul>
-        <!--<li ng-repeat="event in events">{{event.name}}</li>-->
-
-        <li>{{events.name}}</li>
+        <li ng-repeat="event in events"><a ng-href="#/event/{{event.id}}">{{event.name}}</a></li>
     </ul>
 </div>

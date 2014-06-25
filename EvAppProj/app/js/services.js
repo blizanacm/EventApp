@@ -1,20 +1,37 @@
 var eventAppServices = angular.module('EventAppServices', []);
 
-eventAppServices.factory('EventDataService', function($resource, $q){
-    var resource = $resource('/app/data/events/:id', {id: '@id'}, {'query': {method: 'GET', isArray: false}});
+eventAppServices.factory('EventDataService', function($http, $q){
     var getAll = function(){
-        /*var deferred = $q.defer();
-        resource.get({id: '1.json'}, function(data){
+        var deferred = $q.defer();
+
+        $http.get('/app/data/events.json').success(function(data){
             deferred.resolve(data);
-        }, function(data){
+        }).error(function(data){
             deferred.reject(data);
         });
 
-        return deferred.promise;*/
-
-        return resource.query();
+        return deferred.promise;
     };
+
+    var getById = function(eventId) {
+        var deferred = $q.defer();
+
+        $http.get('/app/data/events.json').success(function(events){
+            for(var i = 0; i < events.length; i++) {
+                if(eventId == events[i].id) {
+                    deferred.resolve(events[i]);
+                    break;
+                }
+            }
+        }).error(function(data){
+            deferred.reject(data);
+        });
+
+        return deferred.promise;
+    };
+
     return {
-        getAllEvents: getAll
+        getAllEvents: getAll,
+        getEventById: getById
     };
 });
