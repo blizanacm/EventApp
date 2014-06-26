@@ -1,6 +1,9 @@
 var eventAppServices = angular.module('EventAppServices', []);
 
-eventAppServices.factory('EventDataService', function($http, $q){
+eventAppServices.factory('EventDataService', function($http, $q, $resource){
+
+    var resource = $resource('/data/events.json');
+
     var getAll = function(){
         var deferred = $q.defer();
 
@@ -16,22 +19,48 @@ eventAppServices.factory('EventDataService', function($http, $q){
     var getById = function(eventId) {
         var deferred = $q.defer();
 
-        $http.get('/app/data/events.json').success(function(events){
-            for(var i = 0; i < events.length; i++) {
-                if(eventId == events[i].id) {
-                    deferred.resolve(events[i]);
+        if(eventsArray == null || eventsArray.length == 0) {
+            getAll().then(function(data){
+                eventsArray = data;
+                var event = null;
+
+                for(var i = 0; i < eventsArray.length; i++) {
+                    if(eventsArray[i].id == eventId) {
+                        event = eventsArray[i];
+                        break;
+                    }
+                }
+
+                deferred.resolve(event);
+            }, function(data){
+                deferred.reject(data);
+            });
+        } else {
+            var event = null;
+
+            for(var i = 0; i < eventsArray.length; i++) {
+                if(eventsArray[i].id == eventId) {
+                    event = eventsArray[i];
                     break;
                 }
             }
-        }).error(function(data){
-            deferred.reject(data);
-        });
+
+            deferred.resolve(event);
+        }
 
         return deferred.promise;
     };
 
+    var save = function(){
+        event = {};
+        event.id = 5;
+        event.name = "Pera";
+        eventsArray.push(event);
+    };
+
     return {
         getAllEvents: getAll,
-        getEventById: getById
+        getEventById: getById,
+        saveEvent: save
     };
 });

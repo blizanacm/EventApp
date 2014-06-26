@@ -1,4 +1,17 @@
 <div>
-    {{event.id}}<br />
-    {{event.name}}
+    <h1>{{event.name}}</h1>
+    <hr />
+    <img ng-src="{{event.imageUrl}}" alt="{{event.name}}"/><br />
+    <span class="thumbLabel">Date:</span><span class="thumbValue">{{event.date}}</span><br />
+    <span class="thumbLabel">Time:</span><span class="thumbValue">{{event.time}}</span><br />
+    <span class="thumbLabel">Address:</span><span class="thumbValue">{{event.location.address}}</span><br />
+    <span class="thumbLabel"></span><span class="thumbValue">{{event.location.city}}, {{event.location.province}}</span>
+
+    <div>
+        <h3>Sessions</h3>
+        <hr />
+        <span ng-if="event.sessions.length == 0">There are no available sessions.</span>
+    </div>
+
+
 </div>

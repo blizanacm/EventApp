@@ -1,5 +1,13 @@
 <div>
-    <ul>
-        <li ng-repeat="event in events"><a ng-href="#/event/{{event.id}}">{{event.name}}</a></li>
-    </ul>
+    <h1>Events</h1>
+    <hr />
+    <div class="eventThumb" ng-repeat="event in events">
+        <h3>{{event.name}}</h3>
+        <span class="thumbLabel">Date:</span><span class="thumbValue">{{event.date}}</span>
+        <span class="thumbLabel">Time:</span><span class="thumbValue">{{event.time}}</span>
+        <span class="thumbLabel">Address:</span><span class="thumbValue">{{event.location.address}}</span>
+        <span class="thumbLabel"></span><span class="thumbValue">{{event.location.city}}, {{event.location.province}}</span>
+
+        <a ng-href="#/event/{{event.id}}">View details</a>
+    </div>
 </div>

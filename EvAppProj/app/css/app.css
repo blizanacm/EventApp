@@ -28,3 +28,39 @@
   content: "";
   padding: 0;
 }
+
+body {
+    width: 900px;
+    margin: 10px auto;
+}
+
+.eventThumb {
+    width: 380px;
+    float: left;
+    border: 1px solid gray;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+}
+
+.eventThumb a {
+    float: right;
+    margin-top: 10px;
+}
+
+.thumbLabel, .thumbValue {
+    display: inline-block;
+}
+
+.thumbLabel {
+    width: 80px;
+}
+
+.thumbValue {
+    width: 300px;
+    font-weight: bold;
+}
+

@@ -1,15 +1,14 @@
 var eventAppControllers = angular.module('EventAppControllers', []);
 
 eventAppControllers.controller('HomeCtrl', function($scope, EventDataService) {
-    /*EventDataService.getAllEvents().then(function(data){
-        console.log(data);
-        $scope.events = data;
-    }, function(data){});*/
-    EventDataService.getAllEvents().then(function(data) {
-        $scope.events = data;
-    }, function(data) {
-
-    });
+    if (eventsArray == null || eventsArray.length == 0) {
+        EventDataService.getAllEvents().then(function(data) {
+            eventsArray = data;
+            $scope.events = eventsArray;
+        }, function(data) {});
+    } else {
+        $scope.events = eventsArray;
+    }
 });
 
 eventAppControllers.controller('EventDetailsCtrl', function($scope, $routeParams, EventDataService) {
@@ -18,8 +17,6 @@ eventAppControllers.controller('EventDetailsCtrl', function($scope, $routeParams
     }, function(data) {});
 });
 
-eventAppControllers.controller('CreateEventCtrl', function($scope) {
-
+eventAppControllers.controller('CreateEventCtrl', function($scope, EventDataService) {
+    $scope.saveEvent = EventDataService.saveEvent;
 });
-
-//$scope.events = EventService.getAllEvents();

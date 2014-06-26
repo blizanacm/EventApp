@@ -1,5 +1,6 @@
 var eventApp = angular.module('EventApp', [
     'ngRoute',
+    'ngResource',
     'EventAppControllers',
     'EventAppServices',
     'EventAppFilters',

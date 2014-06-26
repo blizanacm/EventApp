@@ -9,7 +9,7 @@
             "city": "Mountain View",
             "province": "CA"
         },
-        "imageUrl": "/img/AngularJS.png",
+        "imageUrl": "/app/img/AngularJS.png",
         "sessions": [
             {
                 "name": "Directives Masterclass",
@@ -44,7 +44,7 @@
             "city": "New York",
             "province": "NY"
         },
-        "imageUrl": "http://blog.laptopmag.com/wpress/wp-content/uploads/2012/08/Code-Camp_sf.jpg",
+        "imageUrl": "/app/img/CodeCamp.jpg",
         "sessions": [
             {
                 "name": "How To Program",
@@ -93,7 +93,7 @@
             "city": "Sydney",
             "province": "AU"
         },
-        "imageUrl": "http://api.ning.com/files/2vzV35vB8k5SPm92v9bGA0ng9DP2h-ONIcgPoDUThiIk1roHMF4eVjzlN2o3z9S5aU*wKgn9jZpdxEekNQCYvnOumr-beV44/cnlogo.png",
+        "imageUrl": "/app/img/coderetreat.png",
         "sessions" : []
     },
     {
@@ -104,8 +104,9 @@
         "location": {
             "address": "Terazije",
             "city": "Belgrade",
-            "province": "SR"},
-        "imageUrl":"http://s3.favim.com/orig/39/funny-llama-lol-nonsense-pink-Favim.com-325386.jpg",
+            "province": "SR"
+        },
+        "imageUrl": "/app/img/FallCodeCamp.jpg",
         "sessions": []
     }
 ]
