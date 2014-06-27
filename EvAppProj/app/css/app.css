@@ -51,7 +51,7 @@ body {
     margin-top: 10px;
 }
 
-.thumbLabel, .thumbValue {
+.thumbLabel, .thumbValue, .thumbInput {
     display: inline-block;
 }
 
@@ -62,6 +62,10 @@ body {
 .thumbValue {
     width: 300px;
     font-weight: bold;
+}
+
+.thumbInput {
+    width: 500px;
 }
 
 .sessionThumb {

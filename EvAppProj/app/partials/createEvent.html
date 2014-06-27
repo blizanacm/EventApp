@@ -1,1 +1,26 @@
-<button ng-click="saveEvent()">Save</button>
+<form name="createEventForm" novalidate>
+    <label for="eventName" class="thumbLabel">Event Name:</label>
+    <input id="eventName" type="text" class="thumbInput" ng-required="true" placeholder="Name of your event..." ng-model="event.name" /><br />
+    <label for="eventDate" class="thumbLabel">Date:</label>
+    <input id="eventDate" type="text" class="thumbInput" ng-required="true" placeholder="format (mm/dd/yyyy)..." ng-model="event.date"
+           ng-pattern="/^(0?[1-9]|1[012])\/(0?[1-9]|[12][0-9]|3[01])\/(199\d|[2-9]\d{3})$/"/><br />
+    <label for="eventTime" class="thumbLabel">Time:</label>
+    <input id="eventTime" type="text" class="thumbInput" placeholder="start and end time..." ng-model="event.time" /><br />
+    <label for="eventLocation" class="thumbLabel">Location:</label>
+    <input id="eventLocation" type="text" class="thumbInput" placeholder="Address of event..." ng-model="event.location.address" /><br />
+    <label class="thumbLabel"></label>
+    <input id="eventCity" type="text" class="thumbInput" placeholder="City..." ng-model="event.location.city" /><br />
+    <label class="thumbLabel"></label>
+    <input id="eventProvince" type="text" class="thumbInput" placeholder="Province..." ng-model="event.location.province" /><br />
+
+    <label for="eventImageUrl" class="thumbLabel">Image:</label>
+    <input id="eventImageUrl" type="url" class="thumbInput" placeholder="Url of image..." ng-model="event.imageUrl" /> <br />
+
+
+    <img ng-src="{{event.imageUrl}}"/>
+    <br />
+    <br />
+
+    <button type="submit" class="btn btn-primary" ng-disabled="createEventForm.$invalid" ng-click="saveEvent(event, createEventForm)">Save</button>
+    <button type="button" class="btn btn-default" ng-click="cancelCreate()">Cancel</button>
+</form>

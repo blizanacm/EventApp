@@ -19,4 +19,5 @@ eventAppControllers.controller('EventDetailsCtrl', function($scope, $routeParams
 
 eventAppControllers.controller('CreateEventCtrl', function($scope, EventDataService) {
     $scope.saveEvent = EventDataService.saveEvent;
+    $scope.cancelCreate = EventDataService.cancelCreate;
 });

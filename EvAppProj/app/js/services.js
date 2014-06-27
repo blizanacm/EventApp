@@ -1,6 +1,6 @@
 var eventAppServices = angular.module('EventAppServices', []);
 
-eventAppServices.factory('EventDataService', function($http, $q){
+eventAppServices.factory('EventDataService', function($http, $q, $location){
 
     var getAll = function(){
         var deferred = $q.defer();
@@ -49,11 +49,13 @@ eventAppServices.factory('EventDataService', function($http, $q){
         return deferred.promise;
     };
 
-    var save = function(){
-        event = {};
-        event.id = 5;
-        event.name = "Pera";
+    var save = function(event, createEventForm){
         eventsArray.push(event);
+        $location.path('/home');
+    };
+
+    var cancelCreate = function(){
+        $location.path('/home');
     };
 
     return {
