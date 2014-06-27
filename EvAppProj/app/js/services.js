@@ -1,8 +1,6 @@
 var eventAppServices = angular.module('EventAppServices', []);
 
-eventAppServices.factory('EventDataService', function($http, $q, $resource){
-
-    var resource = $resource('/data/events.json');
+eventAppServices.factory('EventDataService', function($http, $q){
 
     var getAll = function(){
         var deferred = $q.defer();

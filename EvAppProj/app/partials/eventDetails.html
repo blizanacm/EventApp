@@ -8,9 +8,19 @@
     <span class="thumbLabel"></span><span class="thumbValue">{{event.location.city}}, {{event.location.province}}</span>
 
     <div>
-        <h3>Sessions</h3>
+        <h2>Sessions</h2>
         <hr />
         <span ng-if="event.sessions.length == 0">There are no available sessions.</span>
+
+        <div ng-repeat="session in event.sessions" class="sessionThumb"> <!-- | filter:query | orderBy:sortorder -->
+            <h3>{{session.name}}</h3>
+            <h5>{{session.creatorName}}</h5>
+            <span class="thumbLabel">Duration:</span><span class="thumbValue">{{session.duration}}hr(s)</span><br />
+            <span class="thumbLabel">Level:</span><span class="thumbValue">{{session.level}}</span>
+
+            <p>{{session.abstract}}</p>
+        </div>
+
     </div>
 
 
