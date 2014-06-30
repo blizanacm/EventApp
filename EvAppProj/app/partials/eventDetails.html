@@ -12,7 +12,7 @@
         <hr />
         <span ng-if="event.sessions.length == 0">There are no available sessions.</span>
 
-        <div ng-repeat="session in event.sessions" class="sessionThumb"> <!-- | filter:query | orderBy:sortorder -->
+        <div ng-repeat="session in event.sessions" class="sessionThumb">
             <h3>{{session.name}}</h3>
             <h5>{{session.creatorName}}</h5>
             <span class="thumbLabel">Duration:</span><span class="thumbValue">{{session.duration}}hr(s)</span><br />

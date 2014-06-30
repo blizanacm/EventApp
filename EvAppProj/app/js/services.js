@@ -1,7 +1,6 @@
 var eventAppServices = angular.module('EventAppServices', []);
 
 eventAppServices.factory('EventDataService', function($http, $q, $location){
-
     var getAll = function(){
         var deferred = $q.defer();
 
@@ -61,6 +60,7 @@ eventAppServices.factory('EventDataService', function($http, $q, $location){
     return {
         getAllEvents: getAll,
         getEventById: getById,
-        saveEvent: save
+        saveEvent: save,
+        cancelCreate: cancelCreate
     };
 });
