@@ -16,7 +16,7 @@ eventApp.config(function($routeProvider) {
         templateUrl: 'partials/createEvent.html',
         controller: 'CreateEventCtrl'
     });
-    $routeProvider.when('/event/:id', {
+    $routeProvider.when('/event/:eventId', {
         templateUrl: 'partials/eventDetails.html',
         controller: 'EventDetailsCtrl'
     });

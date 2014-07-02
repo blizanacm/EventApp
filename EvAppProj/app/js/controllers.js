@@ -12,7 +12,7 @@ eventAppControllers.controller('HomeCtrl', function($scope, EventDataService) {
 });
 
 eventAppControllers.controller('EventDetailsCtrl', function($scope, $routeParams, EventDataService) {
-    EventDataService.getEventById($routeParams.id).then(function(data){
+    EventDataService.getEventById($routeParams.eventId).then(function(data){
         $scope.event = data;
     }, function(data) {});
 });
