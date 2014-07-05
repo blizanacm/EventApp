@@ -84,3 +84,7 @@ body {
     margin-bottom: 10px;
     margin-top: 0px;
 }
+
+input.ng-invalid, select.ng-invalid, textarea.ng-invalid {
+    border: solid 1px red;
+}

@@ -49,8 +49,10 @@ eventAppServices.factory('EventDataService', function($http, $q, $location){
     };
 
     var save = function(event, createEventForm){
-        eventsArray.push(event);
-        $location.path('/home');
+        if(createEventForm.$valid) {
+            eventsArray.push(event);
+            $location.path('/home');
+        }
     };
 
     var cancelCreate = function(){
