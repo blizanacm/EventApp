@@ -1,8 +1,21 @@
-'use strict';
+var eventAppDirectives = angular.module('EventAppDirectives', []);
 
-angular.module('EventAppDirectives', []).
-  directive('appVersion', ['version', function(version) {
-    return function(scope, elm, attrs) {
-      elm.text(version);
-    };
-  }]);
+eventAppDirectives.directive('datePicker', function(){
+    return {
+        restrict: 'A',
+        link: function(scope, element, attrs) {
+            $(element).datepicker();
+        }
+    }
+});
+
+eventAppDirectives.directive('sessionThumb', function(){
+    return {
+        restrict: 'E',
+        templateUrl: 'partials/directives/sessionThumb.html',
+        replace: true,
+        scope: {
+            session: "=session"
+        }
+    }
+});

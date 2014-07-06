@@ -4,7 +4,7 @@
            placeholder="Name of your event..." ng-model="event.name" /><br />
     <label for="eventDate" class="thumbLabel">Date:</label>
     <input id="eventDate" type="text" name="date" class="thumbInput" ng-required="true"
-           placeholder="format (mm/dd/yyyy)..." ng-model="event.date"
+           placeholder="format (mm/dd/yyyy)..." ng-model="event.date" date-picker
            ng-pattern="/^(0?[1-9]|1[012])\/(0?[1-9]|[12][0-9]|3[01])\/(199\d|[2-9]\d{3})$/"/><br />
     <label for="eventTime" class="thumbLabel">Time:</label>
     <input id="eventTime" type="text" name="time" class="thumbInput" placeholder="start and end time..."
