@@ -1,6 +1,0 @@
-http://www.angularjstutorial.com/
-http://stephanebegaudeau.tumblr.com/post/48776908163/everything-you-need-to-understand-to-start-with
-http://jonathanmh.com/best-javascript-mvc-frameworks-2013-2014/
-
-http://javascript.about.com/od/reference/a/history.htm
-https://www.w3.org/community/webed/wiki/A_Short_History_of_JavaScript
