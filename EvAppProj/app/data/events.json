@@ -5,29 +5,29 @@
         "date": "1/1/2014",
         "time": "10:30 am",
         "location": {
-            "address": "Google Headquarters",
-            "city": "Mountain View",
-            "province": "CA"
+            "address": "Studentski trg 16",
+            "city": "Belgrade",
+            "country": "Serbia"
         },
         "imageUrl": "/app/img/AngularJS.png",
         "sessions": [
             {
                 "name": "Directives Masterclass",
-                "creatorName": "Bob Smith",
+                "creatorName": "Marko Marković",
                 "duration": 1,
                 "level": "Advanced",
                 "abstract": "In this session you will learn the ins and outs of directives!"
             },
             {
                 "name": "Scopes for fun and profit",
-                "creatorName": "John Doe",
+                "creatorName": "Stevan Stevanović",
                 "duration": 3,
                 "level": "Introductory",
                 "abstract": "This session will take a closer look at scopes."
             },
             {
                 "name": "Well Behaved Controllers",
-                "creatorName": "Jane Doe",
+                "creatorName": "Đorđe Đorđević",
                 "duration": 2,
                 "level": "Intermediate",
                 "abstract": "Controllers are the beginning of everything Angular does."
@@ -40,43 +40,43 @@
         "date": "03/15/2014",
         "time": "9:00am - 5:00pm",
         "location": {
-            "address": "123 Wall St",
-            "city": "New York",
-            "province": "NY"
+            "address": "Kneza Višeslava 12",
+            "city": "Zagreb",
+            "country": "Croatia"
         },
         "imageUrl": "/app/img/CodeCamp.jpg",
         "sessions": [
             {
                 "name": "How To Program",
-                "creatorName": "Jim Cooper",
+                "creatorName": "Antoni Antonić",
                 "duration": 1,
                 "level": "Advanced",
                 "abstract": "This session will teach you to program."
             },
             {
                 "name": "How To Dance",
-                "creatorName": "Jim Cooper",
+                "creatorName": "David Davidović",
                 "duration": 4,
                 "level": "Introductory",
                 "abstract": "This session will teach you to dance."
             },
             {
                 "name": "How To Sing",
-                "creatorName": "Bob",
+                "creatorName": "Jozef",
                 "duration": 1,
                 "level": "Advanced",
                 "abstract": "This session will teach you to sing  Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum  Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum  Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum "
             },
             {
                 "name": "How To Be Awesome",
-                "creatorName": "Bob",
+                "creatorName": "Jozef",
                 "duration": 2,
                 "level": "Introductory",
                 "abstract": "This course will make me rich"
             },
             {
                 "name": "How to build Angular Applications",
-                "creatorName": "Bob",
+                "creatorName": "Jozef",
                 "duration": 2,
                 "level": "Intermediate",
                 "abstract": "This session is all about angular applications"
@@ -89,9 +89,9 @@
         "date": "03/16/2014",
         "time": "8:00am - 4:30pm",
         "location": {
-            "address": "42 Wallaby Way",
-            "city": "Sydney",
-            "province": "AU"
+            "address": "Njegoševa 23",
+            "city": "Podgorica",
+            "country": "Montenegro"
         },
         "imageUrl": "/app/img/coderetreat.png",
         "sessions" : []
@@ -102,9 +102,9 @@
         "date": "10/01/2014",
         "time": "10am",
         "location": {
-            "address": "Terazije",
-            "city": "Belgrade",
-            "province": "SR"
+            "address": "Cara Dušana 7",
+            "city": "Niš",
+            "country": "Serbia"
         },
         "imageUrl": "/app/img/FallCodeCamp.jpg",
         "sessions": []

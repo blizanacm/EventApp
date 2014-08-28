@@ -6,7 +6,8 @@
         <span class="thumbLabel">Date:</span><span class="thumbValue">{{event.date}}</span>
         <span class="thumbLabel">Time:</span><span class="thumbValue">{{event.time}}</span>
         <span class="thumbLabel">Address:</span><span class="thumbValue">{{event.location.address}}</span>
-        <span class="thumbLabel"></span><span class="thumbValue">{{event.location.city}}, {{event.location.province}}</span>
+        <span class="thumbLabel"></span>
+        <span class="thumbValue">{{event.location.city}}, {{event.location.country}}</span>
 
         <a ng-href="#/event/{{event.id}}">View details</a>
     </div>
