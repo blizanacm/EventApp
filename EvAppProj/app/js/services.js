@@ -50,6 +50,7 @@ eventAppServices.factory('EventDataService', function($http, $q, $location){
 
     var save = function(event, createEventForm){
         if(createEventForm.$valid) {
+            event.id = eventsArray.length + 1;
             eventsArray.push(event);
             $location.path('/home');
         }
